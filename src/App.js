@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 
 //CSS
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import './Fonts.css'
 
 
 import Hola from './components/Hola';
