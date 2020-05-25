@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import authorPhoto from './img/author.jpg'
 
 import Header from '../../components/Header'
 
@@ -10,7 +11,6 @@ export default class Post extends Component {
   render() {
     const title = 'The Coronavirus Vaccine May Not Work on the Elderly'
     const subtitle = 'For those over 65, the pandemic is unlikely to end when the first vaccines arrive'
-    const userPhoto = 'Foto'
     const author = 'Brendan Borrell'
     const date = 'May 22'
     const timeRead = '8 min read'
@@ -22,20 +22,20 @@ export default class Post extends Component {
 
           <Header />     
            
-          <div className='row'>
-            <div className='col-12 post-container'>
-              <h1 className='post-title'>{title}</h1>
-              <h3 className='post-subtitle'>{subtitle}</h3>
-              <div className='postData'>
-                <div className='userPhoto'>{userPhoto}</div>
-                <div className='author-time'>
-                  <p className='post-author'>{author}</p>
-                  <p className= 'post-timedate'>{date} - {timeRead}</p>
-                </div>
+          <div className='post-container'>
+            <h1 className='post-title'>{title}</h1>
+            <h3 className='post-subtitle'>{subtitle}</h3>
+            <div className='postData'>
+              <div className='userPhoto'>
+                <img className="author-photo" alt= "" src={authorPhoto}/>
               </div>
-              <img className='post-img' alt= "" src={postImg}/>
-              <p className='post-text'>{textPost}</p>
+              <div className='author-time'>
+                <p className='post-author'>{author}</p>
+                <p className= 'post-timedate'>{date} - {timeRead}</p>
+              </div>
             </div>
+            <img className='post-img' alt= "" src={postImg}/>
+            <p className='post-text'>{textPost}</p>
           </div>
 
         </div>        

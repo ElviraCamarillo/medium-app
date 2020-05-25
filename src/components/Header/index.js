@@ -11,15 +11,15 @@ import "../../fonts.css"
 
 function Header() {
   return (
-    <header className="row py-4">
-      <div className="hdr col-12">
+    <header>
+      <div className="hdr">
         <div>
-            <img className="logo d-none d-sm-none d-md-block" alt= "" src={logo}/>
-            <img className="logoSm d-block d-sm-block d-md-none" alt= "" src={logoSm}/>
+          <img className="logo d-none d-sm-none d-md-block" alt= "" src={logo}/>
+          <img className="logoSm d-block d-sm-block d-md-none" alt= "" src={logoSm}/>
         </div>
         <div className="d-flex justify-content align-items-center">
           <img className="icon" alt= "" src={search}/>
-          <img className="icon" alt= "" src={bookmark}/>
+          <img className="icon d-none d-sm-none d-md-block" alt= "" src={bookmark}/>
           <img className="icon" alt= "" src={notification}/>
           <button className="btn btn-outline-dark" type="button">Publicar</button>
           <img className="profile-photo" alt= "" src={profile}/>
