@@ -3,7 +3,7 @@ import './Post.css'
 
 function Post({
   title,
-  imageUrl,
+  imageURL,
   description,
   author,
   contentPost,
@@ -21,7 +21,7 @@ function Post({
       <p className='Post-date'>{date}, {estimaredReadTime}</p>
       </div>
       <div className='Post-image'>
-        <a style={{ backgroundImage: `url(${imageUrl })` }} />
+        <a style={{ backgroundImage: `url(${imageURL })` }} />
       </div>
     </div>
   )

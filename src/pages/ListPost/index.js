@@ -14,22 +14,23 @@ export default class ListPost extends Component {
 
   componentDidMount () {
     console.log('Mount')
-    fetch('http://blog-medium-api.mybluemix.net/posts')
+    fetch('http://blog-medium-api.mybluemix.net/posts/.json')
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      console.log(data.data)
+      const postsData = data.data.posts
       var postArray = []
-      for (let key in data.post) {
+      for (let key in postsData) {
         postArray.push({
           key,
-          title: data.post[key].title,
-          imageUrl:data.post[key].imageUrl,
-          description:data.post[key].description,
-          author:data.post[key].author,
-          contentPost:data.post[key].contentPost,
-          category:data.post[key].category,
-          estimaredReadTime:data.post[key].estimaredReadTime,
-          date:data.post[key].date
+          title: postsData[key].title,
+          imageURL:postsData[key].imageURL,
+          description:postsData[key].description,
+          author:postsData[key].author,
+          contentPost:postsData[key].contentPost,
+          category:postsData[key].category,
+          estimaredReadTime:postsData[key].estimaredReadTime,
+          date:postsData[key].date
         })
       }
       this.setState({
@@ -43,7 +44,7 @@ export default class ListPost extends Component {
     return post.map((
       {key, 
       title,
-      imageUrl,
+      imageURL,
       description,
       author,
       contentPost,
@@ -53,7 +54,7 @@ export default class ListPost extends Component {
         return <Post 
         key={key}
         title ={title}
-        imageUrl = {imageUrl}
+        imageURL = {imageURL}
         description = {description}
         author = {author}
         contentPost = {contentPost}
