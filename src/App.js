@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import './fonts.css'
 
-import Post from './pages/Post'
+import PostId from './pages/Post'
 
 export default class App extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class App extends Component {
         <div className='App'>
           <Switch>
             <Route exact path="/post">
-              <Post />
+              <PostId />
             </Route>
           </Switch>          
         </div>
