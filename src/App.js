@@ -1,35 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component }from 'react'
+
+//External Packages
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom'
+
+//pages
+import ListPost from './pages/ListPost'
 
 //CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import './Fonts.css'
 
-
-import Hola from './components/Hola';
-
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='border border-primary'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Hola/>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Route exact path='/'>
+            <ListPost/>
+          </Route>
+        </div>
+      </Router>
+    )
+  }
 }
 
-export default App;
