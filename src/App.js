@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import './fonts.css'
 
-import Header from './components/Header';
+import Post from './pages/Post'
 
 export default class App extends Component {
   render() {
@@ -14,8 +14,8 @@ export default class App extends Component {
       <Router>
         <div className='App'>
           <Switch>
-            <Route exact path="/posts">
-              <Header />
+            <Route exact path="/post">
+              <Post />
             </Route>
           </Switch>          
         </div>

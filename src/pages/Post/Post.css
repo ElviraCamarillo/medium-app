@@ -1,0 +1,50 @@
+.post-container {
+  padding: 0 18%;
+}
+
+.post-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 230%;
+}
+
+.post-subtitle {
+  text-align: left;
+  font-size: 140%;
+  color: gray;
+  font-weight: normal;
+}
+
+.postData {
+  display: flex;
+}
+
+.author-time {
+  width: 50%;
+}
+
+.post-author {
+  text-align: left;
+  padding-left: 10%;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+.post-timedate {
+  text-align: left;
+  padding-left: 10%;
+  font-size: 80%;
+  margin-bottom: 0;
+  color: gray;
+}
+
+.post-img {
+  width: 100%;
+  padding: 5% 0
+}
+
+.post-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 130%;
+  text-align: left;
+}
