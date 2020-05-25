@@ -11,8 +11,8 @@ import ListPost from './pages/ListPost'
 
 //CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
-import './Fonts.css'
+import './App.css'
+import './fonts.css'
 
 export default class App extends Component {
   render() {
