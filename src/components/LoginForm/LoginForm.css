@@ -1,0 +1,163 @@
+.navbar-login {
+    background-color: rgb(59, 59, 59);
+    color: #ffffff;
+    width: 100vw;
+    height: 150px;
+    font-size: 12px;
+    font-weight: 560;
+  }
+  
+  .navlogin-contenido {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  
+  .drop-style {
+    font-size: 12px;
+    font-weight: 560;
+    width: 50px;
+    height: 30px;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 4px !important;
+    border: gray 2px solid;
+    background: rgba(20, 46, 114, 0.9);
+  }
+  
+  .dropdown-menu.show {
+    min-width: 50px;
+    height: 28px !important;
+    font-size: 12px;
+    font-weight: 560;
+    margin-top: 3px;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 4px !important;
+    border: gray 2px solid;
+    background: rgba(20, 46, 114, 0.9);
+    color: #ffffff;
+  }
+    
+  /* For FLOAT LOGIN SECTION*/
+  .float-login {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin-top: -65px;
+    position: relative;
+    z-index: 1;
+/*   
+    a:visited, a:hover, a:active {
+      color: $gray_principal;
+    } */
+  }
+  
+  .container-login {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 100%;
+  }
+  
+  .card-login {
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    width: 100vw !important;
+    height: 90%;
+  }
+  
+  .title-session-login {
+    margin-left: -20vw;
+    color: gray;
+  }
+  
+  hr {
+    border: 0;
+    border-bottom: 1px solid gray;
+    height: 0;
+    width: 80vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .card-body-login {
+    width: 90vw;
+    text-align: center;
+  }
+  
+  .text-reset-password {
+    color: gray;
+    margin-top: 12px;
+  }
+  
+  .btn-login {
+    width: 100px;
+    height: 30px;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 4px !important;
+    border: black 2px solid;
+    background-color: black;
+    color: #ffffff;
+    font-weight: 560;
+  }
+  
+  .btn-login:hover,
+  .btn-login:focus {
+    color: #ffffff;
+    background-color: darken(gray, 5%) !important;
+  }
+  
+  .register-inlogin-section {
+    margin-bottom: 5% !important;
+    display: flex;
+  }
+  
+  .card-title-login {
+    margin: auto;
+    margin-right: 10px;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .card-login {
+      width: 40vw !important;
+    }
+  
+    .card-body-login {
+      width: 35vw;
+      text-align: center;
+    }
+  
+    .title-session-login {
+      margin-top: -2vw;
+      padding-left: 40%;
+    }
+  
+    hr {
+      border: 0;
+      border-bottom: 1px solid gray;
+      height: 0;
+      width: 80%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .register-inlogin-section {
+      margin-bottom: 10% !important;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .navlogin-contenido {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  
+    .container-login {
+      height: 100%;
+    }
+  }

@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './Fonts.css'
+import './fonts.css'
 import './App.css';
 
 // Import Page
 import Home from './pages/Home'
 import PostDetail from "./pages/Post";
 import NewPost from "./pages/NewPost";
+import SignIn from "./pages/SignIn";
 
 
 export default class App extends Component {
@@ -18,6 +19,9 @@ export default class App extends Component {
       <Router>
         <div className='App'>
           <Switch>
+            <Route exact path="/signin">
+              <SignIn/>
+            </Route>
             <Route exact path="/">
               <Home />
             </Route>
