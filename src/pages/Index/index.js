@@ -24,8 +24,8 @@ export default function Index() {
           <ul className='head-right-txt'>
             <li className="d-none d-sm-none d-md-block">Subscribe</li>
             <li className="d-none d-sm-none d-md-block">Write</li>
-            <li className="d-none d-sm-none d-md-block">Sign in</li>
-            <button className='btn btn-secondary'>Get stared</button>
+            <li className="d-none d-sm-none d-md-block">Get started</li>
+            <button className='btn btn-secondary'>Sign in</button>
           </ul>
         </div>      
       </div>
@@ -164,7 +164,7 @@ export default function Index() {
 
       <div className='last-section'>
         <button className='btn btn-secondary'>Get stared</button>
-        <p>Already have an account? Sing in</p>
+        <p>Already have an account? Sign in</p>
 
       </div>
 
