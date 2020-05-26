@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import './Fonts.css'
+import './fonts.css'
 
 import PostId from './pages/Post'
 import ListPost from './pages/ListPost'
