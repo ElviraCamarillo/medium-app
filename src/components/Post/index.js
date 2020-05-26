@@ -1,8 +1,6 @@
 import  React from 'react'
 import './Post.css'
 
-import Header from '../../components/Header'
-
 function Post({
   title,
   imageURL,
@@ -15,7 +13,6 @@ function Post({
 }) {
   return(
     <div className='container'>
-      <Header />
       <div className='Post'>
         <div className='Post-content'>
         <p className='Post-category'>{category}</p>
