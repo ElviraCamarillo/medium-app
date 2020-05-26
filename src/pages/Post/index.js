@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import { useParams } from "react-router-dom";
-
-import authorPhoto from './img/author.jpg'
 
 import Header from '../../components/Header'
 import PostDetail from './components/index.js'
