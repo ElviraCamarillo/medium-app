@@ -21,7 +21,7 @@ export default class Post extends Component {
     console.log(this.props.location.pathname)
     let path = this.props.location.pathname;
     let idPost = path.substring(6)
-    fetch(`http://localhost:8080/posts/${idPost}`)
+    fetch(`http://blog-medium-api.mybluemix.net/posts/${idPost}`)
     .then(response => response.json())
     .then(data => {
       console.log(data)
