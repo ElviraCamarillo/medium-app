@@ -6,7 +6,7 @@ class SignIn extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            sucess: false
+            success: false
         }
         this.validateCredentials = this.validateCredentials.bind(this)
     }
@@ -33,7 +33,7 @@ class SignIn extends Component {
     render() {
         const { success } = this.state;
         if (success) {
-          window.location.href = "/";
+          window.location.href = "/home";
         }
         return (
           <div>

@@ -25,7 +25,7 @@ export default function Index() {
             <li className="d-none d-sm-none d-md-block">Subscribe</li>
             <li className="d-none d-sm-none d-md-block">Write</li>
             <li className="d-none d-sm-none d-md-block">Get started</li>
-            <button className='btn btn-secondary'>Sign in</button>
+            <a className='btn btn-secondary' href = "/signin">Sign in</a>
           </ul>
         </div>      
       </div>
