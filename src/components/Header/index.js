@@ -7,7 +7,7 @@ import bookmark from './img/bookmark.png'
 import notification from './img/notification.png'
 
 import "./Header.css";
-import "../../fonts.css"
+import "../../Fonts.css"
 
 function Header() {
   return (
