@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 
 // Component
 import Post from '../../components/Post'
-import Header from '../../components/Header'
-
 
 export default class ListPost extends Component {
   constructor(props){
@@ -73,13 +71,10 @@ export default class ListPost extends Component {
     console.log('render')
     return (
       <div className='container'>
-        <Header />
         <div className='Post-contanier'>
           <ul>
-          <Link to={`/post/${post.key}`}>{this._renderPost()}</Link>
-          </ul>
-          
-          <p>Hola desde Post</p>       
+          {this._renderPost()}
+          </ul>      
         </div>
       </div>      
     )
