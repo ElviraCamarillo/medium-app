@@ -1,16 +1,12 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
-//CSS
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
-import './fonts.css'
+// Component
+import Post from '../../components/Post'
+import Header from '../../components/Header'
 
-import PostId from './pages/Post'
-import ListPost from './pages/ListPost'
-import Post from './components/Post'
 
-export default class App extends Component {
+export default class ListPost extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -45,34 +41,47 @@ export default class App extends Component {
       })
     })
   }
-
+  
   _renderPost(){
     const { post } = this.state
     return post.map((
-      {_id}) => {
+      {_id, 
+      title,
+      imageURL,
+      description,
+      author,
+      contentPost,
+      category,
+      estimaredReadTime,
+      date}) => {
         return <Post 
         _id={_id}
-        
+        title ={title}
+        imageURL = {imageURL}
+        description = {description}
+        author = {author}
+        contentPost = {contentPost}
+        category = {category}
+        estimaredReadTime = {estimaredReadTime}
+        date = {date}
         />
     })
   }
-
-
+    
   render() {
     const { post } = this.state
+    console.log('render')
     return (
-      <Router>
-        <div className='App'>
-          <Switch>
-            <Route exact path="/">
-              <ListPost />
-            </Route>
-            <Route exact path={`/post/${post._id}`}>
-              <PostId />
-            </Route>
-          </Switch>          
+      <div className='container'>
+        <Header />
+        <div className='Post-contanier'>
+          <ul>
+          <Link to={`/post/${post._id}`}>{this._renderPost()}</Link>
+          </ul>
+          
+          <p>Hola desde Post</p>       
         </div>
-      </Router>
+      </div>      
     )
   }
 }
