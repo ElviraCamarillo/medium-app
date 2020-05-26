@@ -23,17 +23,17 @@ export default class ListPost extends Component {
       console.log(data.data)
       const postsData = data.data.posts
       var postArray = []
-      for (let _id in postsData) {
+      for (let key in postsData) {
         postArray.push({
-          _id,
-          title: postsData[_id].title,
-          imageURL:postsData[_id].imageURL,
-          description:postsData[_id].description,
-          author:postsData[_id].author,
-          contentPost:postsData[_id].contentPost,
-          category:postsData[_id].category,
-          estimaredReadTime:postsData[_id].estimaredReadTime,
-          date:postsData[_id].date
+          key,
+          title: postsData[key].title,
+          imageURL:postsData[key].imageURL,
+          description:postsData[key].description,
+          author:postsData[key].author,
+          contentPost:postsData[key].contentPost,
+          category:postsData[key].category,
+          estimaredReadTime:postsData[key].estimaredReadTime,
+          date:postsData[key].date
         })
       }
       this.setState({
@@ -45,7 +45,7 @@ export default class ListPost extends Component {
   _renderPost(){
     const { post } = this.state
     return post.map((
-      {_id, 
+      {key, 
       title,
       imageURL,
       description,
@@ -55,7 +55,7 @@ export default class ListPost extends Component {
       estimaredReadTime,
       date}) => {
         return <Post 
-        _id={_id}
+        key={key}
         title ={title}
         imageURL = {imageURL}
         description = {description}
@@ -76,7 +76,7 @@ export default class ListPost extends Component {
         <Header />
         <div className='Post-contanier'>
           <ul>
-          <Link to={`/post/${post._id}`}>{this._renderPost()}</Link>
+          <Link to={`/post/${post.key}`}>{this._renderPost()}</Link>
           </ul>
           
           <p>Hola desde Post</p>       
