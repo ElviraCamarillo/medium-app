@@ -19,6 +19,10 @@
     width: 100%;
     padding: 1rem;
 }
+.Post .Post-content a {
+  text-decoration: none;
+  color: #292929
+}
 
 .Post .Post-content .Post-category{
     margin: 0;
@@ -27,14 +31,16 @@
     color: #292929;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    font-size: 1.5rem;
 }
 
 .Post .Post-content .Post-description{
   margin-top: 0.5em;
+  color: #8f8f8f;
 }
 .Post .Post-content .Post-author {
   color:#2a2a2a; 
-  margin-top:1em;
+  margin-top:0;
   margin-bottom:0.5em;
 }
 .Post .Post-content .Post-date{
@@ -53,4 +59,13 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.Post-info{
+  display: flex;
+  justify-content: space-between;
+  padding-top: .5rem;
+}
+.Post-info-right{
+  width: 82px;
 }

@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.postsContainer{
+  display: flex;
+
+}
+
+.postsContainer .post-list-center{
+  padding-right: 2rem;
+}
+.post-list-popular .card-title{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.post-title-top{
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
+  font-weight: 600;
+}

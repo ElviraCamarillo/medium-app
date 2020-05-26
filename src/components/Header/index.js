@@ -5,6 +5,9 @@ import profile from './img/profile-photo.jpg'
 import search from './img/search.png'
 import bookmark from './img/bookmark.png'
 import notification from './img/notification.png'
+import {
+  Link
+} from "react-router-dom";
 
 import "./Header.css";
 import "../../Fonts.css"
@@ -14,14 +17,18 @@ function Header() {
     <header>
       <div className="hdr">
         <div>
+        <Link to="/" exact>
           <img className="logo d-none d-sm-none d-md-block" alt= "" src={logo}/>
           <img className="logoSm d-block d-sm-block d-md-none" alt= "" src={logoSm}/>
+        </Link>
         </div>
         <div className="d-flex justify-content align-items-center">
           <img className="icon" alt= "" src={search}/>
           <img className="icon d-none d-sm-none d-md-block" alt= "" src={bookmark}/>
           <img className="icon" alt= "" src={notification}/>
-          <button className="btn btn-outline-dark" type="button">Publicar</button>
+          <Link to="/newpost" exact>
+            <button className="btn btn-outline-dark" type="button">Publicar</button>
+          </Link>
           <img className="profile-photo" alt= "" src={profile}/>
         </div>
       </div>

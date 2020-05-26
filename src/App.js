@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
 import './Fonts.css'
+import './App.css';
 
 // Import Page
-import PostId from './pages/Post'
-import Home from "./pages/Home/components";
+import Home from './pages/Home'
+import PostDetail from "./pages/Post";
+import NewPost from "./pages/NewPost";
 
 
 export default class App extends Component {
@@ -17,12 +18,11 @@ export default class App extends Component {
       <Router>
         <div className='App'>
           <Switch>
-          <Route exact path="/">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path={`/post`}>
-              <PostId />
-            </Route>
+            <Route path='/post/:id' component={PostDetail} exact />
+            <Route path='/newpost' component={NewPost} exact />
           </Switch>          
         </div>
       </Router>
