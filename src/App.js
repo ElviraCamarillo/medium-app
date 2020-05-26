@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//CSS
+// CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import './Fonts.css'
 
+// Import Page
 import PostId from './pages/Post'
-import ListPost from './pages/ListPost'
-import RecentPosts from "./components/RecentPosts";
-import Header from "./components/Header";
 import Home from "./pages/Home/components";
 
 
