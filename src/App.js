@@ -30,7 +30,7 @@ export default class App extends Component {
       })
     }
   }
-
+  
   render() {
     const { isUserLogedIn } = this.state
     return (

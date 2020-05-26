@@ -10,7 +10,14 @@ import './Home.css'
 export default class Home extends Component {
   constructor(props) {
     super(props)
+    this.logOut = this.logOut.bind(this)
+    }
+
+  logOut() {
+    localStorage.removeItem('authTokenUser')
+    window.location.href = "/"
   }
+
   render() {
     const { isUserLogedIn } = this.props
     return (
@@ -18,7 +25,7 @@ export default class Home extends Component {
       {
         isUserLogedIn ? (
           <div className='container'>
-          <Header/>
+          <Header logOut={this.logOut}/>
           <RecentPosts/>
           <div className="postsContainer">
             <div className="post-list-center">

@@ -33,7 +33,7 @@ class SignIn extends Component {
     render() {
         const { success } = this.state;
         if (success) {
-          window.location.href = "/home";
+          window.location.href = "/home"
         }
         return (
           <div>
