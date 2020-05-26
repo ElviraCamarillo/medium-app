@@ -1,7 +1,8 @@
 import  React from 'react'
 import './Post.css'
 
-import Moment from 'react-moment';
+import Moment from 'react-moment'
+
 import {
   Link
 } from "react-router-dom";

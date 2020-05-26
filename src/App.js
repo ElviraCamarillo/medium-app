@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './fonts.css'
+import './Fonts.css'
 import './App.css';
 
 // Import Page
