@@ -12,6 +12,7 @@
 
 .head-right li{
   padding-right: 50px;
+
 }
 
 .head-right button {
@@ -92,6 +93,7 @@
   
   .head-right li{
     padding-right: 50px;
+    font-size: 18px;
   }
   
   .head-right button {
