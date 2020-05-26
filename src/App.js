@@ -21,7 +21,7 @@ export default class App extends Component {
 
   componentDidMount () {
     console.log('Mount')
-    fetch('http://blog-medium-api.mybluemix.net/posts/.json')
+    fetch('http://blog-medium-api.mybluemix.net/posts/')
     .then(response => response.json())
     .then(data => {
       console.log(data.data)
@@ -67,7 +67,7 @@ export default class App extends Component {
             <Route exact path="/">
               <ListPost />
             </Route>
-            <Route exact path={`/post/${post._id}`}>
+            <Route exact path={`/post/`}>
               <PostId />
             </Route>
           </Switch>          
