@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 700px;
-    margin-left: 50px;
     font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
     color: #757575;
     font-size: 16px;
@@ -17,7 +16,7 @@
 .Post .Post-content {
     line-height:1em;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem 1rem 0;
 }
 .Post .Post-content a {
   text-decoration: none;
