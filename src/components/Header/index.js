@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import "./Header.css";
-import "../../Fonts.css"
+import "../../fonts.css"
 
 function Header() {
   return (
