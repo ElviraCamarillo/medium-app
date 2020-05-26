@@ -15,17 +15,36 @@ import SignIn from "./pages/SignIn";
 
 
 export default class App extends Component {
+  constructor(props) {
+  super(props)
+  this.state = {
+    isUserLogedIn: false
+  }
+  }
+
+  componentDidMount() {
+    const authToken = localStorage.getItem('authTokenUser')
+    if (authToken) {
+      this.setState({
+        isUserLogedIn: true
+      })
+    }
+  }
+  
   render() {
+    const { isUserLogedIn } = this.state
     return (
       <Router>
         <div className='App'>
           <Switch>
+            <Route exact path="/">
+              <Index />
+            </Route>
             <Route exact path="/signin">
               <SignIn/>
             </Route>
-            <Route exact path="/">
-              <Home />
-              <Index />
+            <Route exact path="/home">
+              <Home isUserLogedIn={ isUserLogedIn } />
             </Route>
             <Route path='/post/:id' component={PostDetail} exact />
             <Route path='/newpost' component={NewPost} exact />
