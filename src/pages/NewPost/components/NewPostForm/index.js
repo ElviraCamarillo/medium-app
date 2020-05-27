@@ -87,7 +87,7 @@ export default class NewPostForm extends Component {
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Label>Container Post</Form.Label>
-              <Form.Control as="textarea" name="contentPost" value={this.state.contentPost} onChange={this.onChange.bind(this)}/>
+              <Form.Control type="textarea" name="contentPost" value={this.state.contentPost} onChange={this.onChange.bind(this)}/>
             </Form.Group>
               <Button variant="dark" type="submit">
                 Submit
