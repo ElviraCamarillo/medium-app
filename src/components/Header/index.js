@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import "./Header.css";
-import "../../fonts.css"
+import "../../Fonts.css"
 
 export default class Header extends Component {
   constructor(props){
@@ -19,15 +19,15 @@ export default class Header extends Component {
   }
 
   logOut() {
-    this.props.logOut()
+    localStorage.removeItem('authTokenUser')
+    window.location.href = "/"
   }
-
   render() {
     return (
       <header>
         <div className="hdr">
           <div>
-          <Link to="/" exact>
+          <Link to="/home" exact>
             <img className="logo d-none d-sm-none d-md-block" alt= "" src={logo}/>
             <img className="logoSm d-block d-sm-block d-md-none" alt= "" src={logoSm}/>
           </Link>
