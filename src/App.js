@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './Fonts.css'
+import './fonts.css'
 import './App.css';
 
 // Import Page
@@ -46,7 +46,7 @@ export default class App extends Component {
             <Route exact path="/home">
               <Home isUserLogedIn={ isUserLogedIn } />
             </Route>
-            <Route path='/post/:id' component={PostDetail} exact />
+            <Route path='/post/:id' isUserLogedIn={ isUserLogedIn } component={PostDetail} exact/>
             <Route path='/newpost' component={NewPost} exact />
           </Switch>          
         </div>

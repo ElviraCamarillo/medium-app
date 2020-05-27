@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import "./Header.css";
-import "../../Fonts.css"
+import "../../fonts.css"
 
 export default class Header extends Component {
   constructor(props){
@@ -39,7 +39,7 @@ export default class Header extends Component {
             <Link to="/newpost" exact>
               <button className="btn btn-outline-dark" type="button">Publicar</button>
             </Link>
-            <Link to="/" onClick={this.toggleMenu} className="btn btn-outline-dark ml-1" type="button">LogOut</Link>
+            <Link to="/" onClick={this.logOut} className="btn btn-outline-dark ml-1" type="button">LogOut</Link>
             <img className="profile-photo" alt= "" src={profile}/>
           </div>
         </div>
