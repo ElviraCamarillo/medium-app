@@ -1,30 +1,33 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//External Packages
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom'
-
-//pages
-import ListPost from './pages/ListPost'
-
-//CSS
+// CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
 import './fonts.css'
+import './App.css';
+
+
+// Import Page
+import Home from './pages/Home'
+import PostDetail from "./pages/Post";
+import NewPost from "./pages/NewPost";
+import Index from './pages/Index'
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Route exact path='/'>
-            <ListPost/>
-          </Route>
+        <div className='App'>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+              <Index />
+            </Route>
+            <Route path='/post/:id' component={PostDetail} exact />
+            <Route path='/newpost' component={NewPost} exact />
+          </Switch>          
         </div>
       </Router>
     )
   }
 }
-

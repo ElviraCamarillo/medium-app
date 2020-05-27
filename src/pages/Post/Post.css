@@ -1,0 +1,144 @@
+.post-container {
+  padding: 0 ;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.post-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 33px;
+}
+
+.post-subtitle {
+  text-align: left;
+  font-size: 15px;
+  color: gray;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.postData {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.author-photo{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.user-photo{
+  display: flex;
+  align-items: center;
+}
+
+.author-time {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-author {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.post-timedate {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-bottom: 0;
+  color: gray;
+}
+
+.post-img {
+  width: 100%;
+  padding: 20px 0
+}
+
+.post-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+  color: #292929;
+}
+
+@media only screen and (min-width: 520px ){
+
+
+  .post-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .post-subtitle {
+    text-align: left;
+    font-size: 22px;
+    color: gray;
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+
+  .postData {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+  .author-photo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-photo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-time {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .post-author {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .post-timedate {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: gray;
+  }
+  
+  .post-img {
+    width: 100%;
+    padding: 20px 0
+  }
+  
+  .post-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-align: left;
+    line-height: 35px;
+    color: #292929;
+  }
+   
+}

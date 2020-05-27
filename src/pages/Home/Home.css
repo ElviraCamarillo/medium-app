@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.postsContainer{
+  display: flex;
+}
+.postsContainer ul{
+  padding-left: 0;
+}
+
+.postsContainer .post-list-center{
+  padding-right: 2rem;
+}
+.post-list-popular .card-title{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.post-title-top{
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif !important;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 597px){
+  
+  .postsContainer{
+    flex-direction: column;
+  }
+  .postsContainer .post-list-center{
+    padding-right: 0;
+  }
+  .Post .Post-image a{
+    width: 80px;
+    height: 72px;
+    min-width: 80px;
+  }
+  .Post .Post-image{
+    max-width: 80px;
+  }
+}
