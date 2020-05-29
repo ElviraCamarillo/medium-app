@@ -4,10 +4,12 @@ import logo from './logo.svg';
 //CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import './Fonts.css'
+import './fonts.css'
 
 
 import Hola from './components/Hola';
+import RecentPosts from './components/RecentPosts'
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         </a>
         <Hola/>
       </header>
+      <RecentPosts></RecentPosts>
     </div>
   );
 }
