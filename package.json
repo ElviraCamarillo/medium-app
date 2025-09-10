@@ -15,7 +15,7 @@
     "react-html-parser": "^2.0.2",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "time-ago": "^0.2.1",
     "timeago-react": "^3.0.0"
   },
